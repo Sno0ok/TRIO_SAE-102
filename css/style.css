@@ -65,3 +65,26 @@ body{
     border-radius: 999px;
 }
 
+.div-fleche{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bouton-fleche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8a9bb3;
+    color: #1D2D44;
+    font-size: 28px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.bouton-fleche:hover {
+    background-color: #a5b4c8;
+}
