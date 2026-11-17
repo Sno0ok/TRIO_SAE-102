@@ -16,20 +16,38 @@ body{
   width: 100%;
 }
 
+#voiture1 {
+    display: flex;
+}
 #voiture2 {
     background-color: #1D2D44;
     display: flex;
 }
+#voiture3 {
+    display: flex;
+}
 
-#voiture2 img {
+#voiture1 img,
+#voiture2 img,
+#voiture3 img {
     width: 50%;
     object-fit: cover;
 }
 
+.texte1 {
+    flex: 1;
+    padding: 40px;
+    color: #3E5C76;
+}
 .texte2 {
     flex: 1;
     padding: 40px;
     color: white;
+}
+.texte3 {
+    flex: 1;
+    padding: 40px;
+    color: #3E5C76;
 }
 
 .tags {
@@ -42,7 +60,7 @@ body{
 .tag {
     background-color: #0D1321;
     color: #F0EBD8;
-    font-size: 22px;
+    font-size: 18px;
     padding: 14px 30px;
     border-radius: 999px;
 }
