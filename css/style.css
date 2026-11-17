@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: #F0EBD8;
+    font-family: "Inter", sans-serif;
+}
+
+#top{
+    height: 20%;
+
+}
+
+.barre {
+  border: none;
+  border-top: 2px solid #1D2D44;
+  width: 100%;
+}
+
+#voiture2 {
+    background-color: #1D2D44;
+    display: flex;
+}
+
+#voiture2 img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.texte2 {
+    flex: 1;
+    padding: 40px;
+    color: white;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tag {
+    background-color: #0D1321;
+    color: #F0EBD8;
+    font-size: 22px;
+    padding: 14px 30px;
+    border-radius: 999px;
+}
+
