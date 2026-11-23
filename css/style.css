@@ -1,34 +1,28 @@
 @font-face {
     font-family: "Inter";
-    src: url('font/inter/Inter-Regular.woff2') format('woff2');
+    src: url('../font/inter/Inter-Regular.woff2') format('woff2');
     font-weight: 400;
-    font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "Inter";
-    src: url('font/inter/Inter-Medium.woff2') format('woff2');
+    src: url('../font/inter/Inter-Medium.woff2') format('woff2');
     font-weight: 500;
-    font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "Inter";
-    src: url('font/inter/Inter-SemiBold.woff2') format('woff2');
+    src: url('../font/inter/Inter-SemiBold.woff2') format('woff2');
     font-weight: 600;
-    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url('../font/inter/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
     font-display: swap;
 }
 
-@font-face {
-    font-family: "Inter";
-    src: url('font/inter/Inter-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
 
 body{
     background-color: #F0EBD8;
@@ -231,4 +225,199 @@ body{
     margin-left: auto;
     font-size: 10px;
     color: #d6dfea;
+}
+
+
+/* ===== Page M3 (m3.html) ===== */
+
+.fil {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #3E5C76;
+}
+
+.intro-droite .tags {
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.intro-droite .tag {
+    background-color: #8a9bb3;
+    color: #0D1321;
+    font-size: 12px;
+    padding: 6px 14px;
+}
+
+.video-m3 {
+    display: block;
+    width: 100%;
+    background-color: #0D1321;
+}
+
+.chiffres {
+    display: flex;
+    background-color: #1D2D44;
+    color: #F0EBD8;
+    padding: 40px;
+}
+
+.chiffres div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 20px;
+    border-left: 1px solid #3E5C76;
+}
+
+.chiffres div:first-child {
+    padding-left: 0;
+    border-left: none;
+}
+
+.chiffres strong {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.chiffres small,
+.points small,
+.fiche small,
+.appel small,
+.suivant small {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.moteur {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 40px;
+    color: #3E5C76;
+}
+
+.moteur img {
+    width: 45%;
+    height: auto;
+}
+
+.moteur p {
+    max-width: 360px;
+    line-height: 1.6;
+}
+
+.points,
+.fiche {
+    padding: 20px 40px 40px;
+    color: #3E5C76;
+}
+
+.points-liste {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.points-liste article {
+    flex: 1;
+    border-top: 2px solid #1D2D44;
+    padding-top: 12px;
+}
+
+.points-liste h3 {
+    color: #0D1321;
+    margin: 12px 0 8px;
+}
+
+.fiche {
+    display: flex;
+    gap: 60px;
+}
+
+.fiche > div {
+    width: 35%;
+}
+
+.fiche h2 {
+    font-size: 36px;
+    color: #0D1321;
+    margin: 12px 0;
+}
+
+.fiche table {
+    flex: 1;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.fiche th,
+.fiche td {
+    padding: 12px 0;
+    border-bottom: 1px solid #8a9bb3;
+}
+
+.fiche th {
+    text-align: left;
+    font-weight: 400;
+}
+
+.fiche td {
+    text-align: right;
+    font-weight: 600;
+    color: #0D1321;
+}
+
+.appel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #0D1321;
+    color: #F0EBD8;
+}
+
+.appel h2,
+.suivant h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+.appel-boutons {
+    display: flex;
+    gap: 12px;
+}
+
+.bouton-clair,
+.bouton-contour {
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.bouton-clair {
+    background-color: #F0EBD8;
+    color: #0D1321;
+}
+
+.bouton-contour {
+    border: 1px solid #F0EBD8;
+    color: #F0EBD8;
+}
+
+.suivant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: #0D1321;
+}
+
+.surtitre {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 600;
 }
