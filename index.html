@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRIO</title>
+    <title>TRIO – Le goût de la route : trois voitures, trois caractères</title>
+    <meta name="description" content="TRIO, une sélection de trois voitures aux personnalités marquées : un coupé sportif, un SUV d'aventure et un SUV de luxe.">
+    <link rel="preload" as="image" href="image/voiture1.webp" type="image/webp">
+    <link rel="preload" as="font" type="font/woff2" href="font/inter/Inter-Regular.woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="icon" type="image/png" href="image/favicon.png">
 </head>
 <body>
     <div id="top">
-        <h2>TRIO - LE GOUT DE LA ROUTE</h2>
+        <div class="entete">
+            <p class="logo"><span class="logo-titre">TRIO</span><span class="logo-sous">LE GOÛT DE LA ROUTE</span></p>
+            <nav class="menu">
+                <a href="#voiture1">La collection</a>
+                <a href="#voiture3">Notre regard</a>
+                <a href="#voiture2" class="tag">Trouver son style ↗</a>
+            </nav>
+        </div>
         <hr class="barre">
-        <h1>Trois voitures.<br>Trois caractères.</h1>
-        <p>Des lignes qui attirent le regard.Des personnalités qui font la différence.À chacun sa façon de prendre la route.</p>
+        <div class="intro">
+            <div class="intro-gauche">
+                <small>LA SÉLECTION / 001</small>
+                <h1>Trois voitures.<br>Trois caractères.</h1>
+                <a href="#voiture1" class="decouvrir">DÉCOUVRIR LA COLLECTION ↓</a>
+            </div>
+            <div class="intro-droite">
+                <hr class="trait">
+                <p>Des lignes qui attirent le regard.<br>Des personnalités qui font la différence.<br>À chacun sa façon de prendre la route.</p>
+                <small class="compteur">03 MODÈLES · 03 UNIVERS</small>
+            </div>
+        </div>
     </div>
     <div id="voiture1">
-        <img src="image/voiture1.jpg" alt="">
+        <img src="image/voiture1.webp" width="1000" height="667" fetchpriority="high" alt="Coupé sportif aux lignes basses et tendues">
         <div class="texte1">
-            <h6>01  /  COUPÉ SPORTIF</h6>
+            <p>01  /  COUPÉ SPORTIF</p>
             <h2>L’instinct sportif.</h2>
             <p>Une silhouette basse, des lignes tendues et le plaisir de conduire comme seule destination. Pour ceux qui aiment autant le trajet que l’arrivée. </p>
             <div class="tags">
@@ -26,11 +46,15 @@
                 <span class="tag">Grand tourisme</span>
                 <hr class="barre">
             </div>
+            <div class="div-fleche">
+                <p>Explorer ce modèle</p>
+                <a href="#top" class="bouton-fleche" aria-label="Explorer ce modèle">↗</a>
+            </div>
         </div>
     </div>
     <div id="voiture2">
         <div class="texte2">
-            <h6>02  /  SUV D’AVENTURE</h6>
+            <p>02  /  SUV D’AVENTURE</p>
             <h2>L’horizon sans limite.</h2>
             <p>Du caractère en ville, de l’assurance ailleurs. Un SUV pensé pour les grandes échappées et les détours qui deviennent des souvenirs.</p>
             <div class="tags">
@@ -40,16 +64,16 @@
                 <hr class="barre">
             </div>
             <div class="div-fleche">
-                <p>Explorer le SUV</p>
-                <a href="#" class="bouton-fleche">↗</a>
+                <p>Explorer ce modèle</p>
+                <a href="#top" class="bouton-fleche" aria-label="Explorer ce modèle">↗</a>
             </div>
         </div>
-        <img src="image/voiture2.png" alt="">
+        <img src="image/voiture2.webp" width="1000" height="596" loading="lazy" alt="SUV d'aventure sur la route">
     </div>
     <div id="voiture3">
-        <img src="image/voiture3.jpg" alt="">
+        <img src="image/voiture3.webp" width="1000" height="1000" loading="lazy" alt="Rolls-Royce Cullinan, SUV de luxe">
         <div class="texte3">
-            <h6>03  /  CITADINE ÉLECTRIQUE</h6>
+            <p>03  /  CITADINE ÉLECTRIQUE</p>
             <h2>Le luxe, sans compromis.</h2>
             <p>Une présence majestueuse, un raffinement absolu. Le Rolls-Royce Cullinan incarne le luxe sans compromis, pour faire de chaque voyage une expérience d’exception.</p>
             <div class="tags">
@@ -58,11 +82,16 @@
                 <span class="tag">Agile</span>
                 <hr class="barre">
             </div>
+            <div class="div-fleche">
+                <p>Explorer ce modèle</p>
+                <a href="#top" class="bouton-fleche" aria-label="Explorer ce modèle">↗</a>
+            </div>
         </div>
     </div>
-    <footer id="footer"> 
-        
-
+    <footer id="footer">
+        <span class="footer-logo">TRIO</span>
+        <span class="footer-slogan">Trois caractères. Lequel est le vôtre ?</span>
+        <small class="footer-note">ÉTUDE DE STYLE · MODÈLES CONCEPTUELS</small>
     </footer>
 </body>
 </html>
