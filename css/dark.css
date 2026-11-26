@@ -1,6 +1,7 @@
-/* Second stylesheet loaded by javascript/script.js: dark, amber accent. */
+/* Second stylesheet (dark theme, amber accent), added and removed by javascript/script.js */
 body { background-color: #1a1a1d; color: #e8e6e3; }
 
+/* Selectors start with "body" so they win over the light stylesheets */
 /* text */
 body .menu a, body .menu .theme-toggle, body .intro-gauche small, body .decouvrir,
 body .intro-droite, body .texte1, body .texte3, body .fil, body .moteur, body .points,

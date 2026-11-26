@@ -24,6 +24,7 @@
 }
 
 
+/* Page base */
 body{
     background-color: #F0EBD8;
     font-family: "Inter", sans-serif;
@@ -36,6 +37,7 @@ body{
     margin: 16px 0 30px;
 }
 
+/* Intro block (title + description) */
 .intro {
     display: flex;
     justify-content: space-between;
@@ -83,6 +85,7 @@ body{
 
 }
 
+/* Header and menu */
 .entete {
     display: flex;
     justify-content: space-between;
@@ -116,6 +119,7 @@ body{
     padding: 10px 22px;
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: baseline;
@@ -138,6 +142,7 @@ body{
   width: 100%;
 }
 
+/* Home page: the three car sections */
 #voiture1 {
     display: flex;
 }
@@ -157,6 +162,7 @@ body{
     object-fit: cover;
 }
 
+/* Text column of each car section */
 .texte1 {
     flex: 1;
     padding: 40px;
@@ -173,6 +179,7 @@ body{
     color: #3E5C76;
 }
 
+/* Tags (rounded labels) */
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -194,6 +201,7 @@ body{
     align-items: center;
 }
 
+/* Round arrow button */
 .bouton-fleche {
     display: flex;
     align-items: center;
@@ -212,6 +220,7 @@ body{
     background-color: #a5b4c8;
 }
 
+/* Footer */
 #footer {
     display: flex;
     align-items: center;
@@ -239,6 +248,7 @@ body{
 
 /* ===== Page M3 (m3.html) ===== */
 
+/* Car page: breadcrumb, key figures, engine, strengths, spec sheet, call to action */
 .fil {
     display: flex;
     justify-content: space-between;
@@ -264,6 +274,7 @@ body{
     background-color: #0D1321;
 }
 
+/* Key figures bar */
 .chiffres {
     display: flex;
     background-color: #1D2D44;
@@ -299,6 +310,7 @@ body{
     font-weight: 600;
 }
 
+/* Engine section */
 .moteur {
     display: flex;
     align-items: center;
@@ -323,6 +335,7 @@ body{
     color: #3E5C76;
 }
 
+/* Strengths list */
 .points-liste {
     display: flex;
     gap: 30px;
@@ -378,6 +391,7 @@ body{
     color: #0D1321;
 }
 
+/* Call to action (book a test drive) */
 .appel {
     display: flex;
     justify-content: space-between;
@@ -417,6 +431,7 @@ body{
     color: #F0EBD8;
 }
 
+/* Link to the next model */
 .suivant {
     display: flex;
     justify-content: space-between;
@@ -431,6 +446,7 @@ body{
     font-weight: 600;
 }
 
+/* Test drive form */
 .form-titre,
 .formulaire {
     max-width: 480px;
@@ -469,6 +485,7 @@ body{
     font: inherit;
 }
 
+/* Percent values + media queries: columns stack on tablet and phone */
 /* ===== Responsive (percentages) ===== */
 .texte1, .texte2, .texte3 { padding: 5%; }
 .moteur { padding: 6% 5%; gap: 5%; }
