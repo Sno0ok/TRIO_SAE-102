@@ -24,7 +24,6 @@
 }
 body {
   font-family: "Inter", Arial, sans-serif;
-  text-align: side;
   background-color: #F0EBD8;
   margin: 0;
   padding: 0;
@@ -237,7 +236,7 @@ body {
     opacity: 0.8;
 }
 
-.haut a,
+.menu a,
 .theme-toggle {
     color: inherit;
     text-decoration: none;
@@ -251,25 +250,42 @@ body {
     cursor: pointer;
 }
 
-body.theme-dark {
-    background-color: #323031;
-    color: #C1BDB3;
+
+/* ===== Responsive (percentages) ===== */
+.bloc { width: 40%; padding: 0 3%; }
+.hero { height: auto; }
+.Moteur { margin: 0; padding: 2% 5%; }
+.Moteur td { padding: 1% 3%; }
+.interieur img { width: 60%; }
+.fiche, .suivant { padding: 3% 5%; }
+.appel { padding: 5%; }
+
+@media (max-width: 800px) {
+    .bloc { width: 90%; margin: 0 auto; }
+    .carateristique { flex-wrap: wrap; }
+    .interieur { flex-direction: column; }
+    .interieur img { width: 100%; }
+    .Moteur td { font-size: 12px; }
 }
 
-body.theme-dark .fiche-intro p,
-body.theme-dark .suivant .etiquette,
-body.theme-dark .etiquette {
-    color: #C1BDB3;
-}
+/* Header, same layout as the other pages */
+#top { padding: 1% 2%; }
+body > h3, body > table { margin-left: 2%; margin-right: 2%; }
+.entete { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: baseline; gap: 20px; margin: 0; }
+.logo-titre { font-size: 32px; font-weight: 700; }
+.logo-sous { font-size: 12px; font-weight: 500; }
+.menu { display: flex; align-items: center; gap: 20px; font-size: 14px; }
+.menu .tag { background-color: #0D1321; color: #F0EBD8; padding: 10px 22px; border-radius: 999px; }
+.barre { border: none; border-top: 2px solid #1D2D44; width: 100%; }
+.intro { display: flex; justify-content: space-between; align-items: flex-end; gap: 5%; padding: 2% 0; }
+.intro h1 { font-size: 50px; margin: 0; }
+.bloc { margin: 0; width: 40%; padding: 0; }
+.bloc p { margin: 0 0 3%; line-height: 1.6; }
 
-body.theme-dark .suivant h2 {
-    color: #C1BDB3;
-}
-
-body.theme-dark .fiche-liste div {
-    border-bottom-color: #7F7979;
-}
-
-body.theme-dark .rond {
-    background-color: #5F5B6B;
+@media (max-width: 800px) {
+    .entete, .intro { flex-direction: column; align-items: flex-start; }
+    .menu { flex-wrap: wrap; }
+    .bloc { width: 100%; }
+    .intro h1 { font-size: 36px; }
 }

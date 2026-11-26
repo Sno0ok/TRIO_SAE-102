@@ -116,76 +116,6 @@ body{
     padding: 10px 22px;
 }
 
-body.theme-dark {
-    --theme-background: #323031;
-    --theme-surface: #3D3B3C;
-    --theme-muted: #7F7979;
-    --theme-text: #C1BDB3;
-    --theme-accent: #5F5B6B;
-    background-color: var(--theme-background);
-    color: var(--theme-text);
-}
-
-body.theme-dark .menu .theme-toggle,
-body.theme-dark .menu a:not(.tag),
-body.theme-dark .intro-gauche small,
-body.theme-dark .decouvrir {
-    color: var(--theme-text);
-}
-
-body.theme-dark .intro-droite,
-body.theme-dark .texte1,
-body.theme-dark .texte3 {
-    color: var(--theme-text);
-}
-
-body.theme-dark .trait,
-body.theme-dark .barre {
-    border-top-color: var(--theme-muted);
-}
-
-body.theme-dark #voiture2,
-body.theme-dark .chiffres,
-body.theme-dark .appel {
-    background-color: #5F5B6B;
-}
-
-body.theme-dark .fil,
-body.theme-dark .moteur,
-body.theme-dark .points,
-body.theme-dark .fiche,
-body.theme-dark .suivant {
-    color: var(--theme-text);
-}
-
-body.theme-dark .points-liste article {
-    border-top-color: var(--theme-muted);
-}
-
-body.theme-dark .points-liste h3,
-body.theme-dark .fiche h2,
-body.theme-dark .fiche td {
-    color: var(--theme-text);
-}
-
-body.theme-dark .tag,
-body.theme-dark .bouton-fleche {
-    background-color: #6c4d65;
-    color: var(--theme-text);
-}
-
-body.theme-dark .bouton-fleche:hover {
-    background-color: var(--theme-muted);
-}
-
-body.theme-dark #footer {
-    background-color: var(--theme-accent);
-}
-
-body.theme-dark .footer-note {
-    color: var(--theme-text);
-}
-
 .logo {
     display: flex;
     align-items: baseline;
@@ -537,4 +467,30 @@ body.theme-dark .footer-note {
     border: 1px solid #0D1321;
     cursor: pointer;
     font: inherit;
+}
+
+/* ===== Responsive (percentages) ===== */
+.texte1, .texte2, .texte3 { padding: 5%; }
+.moteur { padding: 6% 5%; gap: 5%; }
+.points, .fiche { padding: 3% 5% 5%; }
+.fiche { gap: 5%; }
+.chiffres { padding: 5%; }
+.appel, .suivant { padding: 5%; }
+#footer { padding: 3% 5%; }
+.form-titre, .formulaire { width: 90%; box-sizing: border-box; }
+
+@media (max-width: 900px) {
+    .entete, .intro, .moteur, .fiche, .appel, .suivant, #footer, .points-liste,
+    #voiture1, #voiture2, #voiture3 { flex-direction: column; }
+    .entete, .logo, .menu { flex-wrap: wrap; gap: 2%; }
+    .intro { padding: 3% 5%; }
+    .intro-droite, .fiche > div, .moteur img,
+    #voiture1 img, #voiture2 img, #voiture3 img { width: 100%; }
+    .moteur p { max-width: 100%; }
+    .chiffres { flex-wrap: wrap; gap: 5% 0; }
+    .chiffres div, .chiffres div:first-child { flex: 1 1 45%; box-sizing: border-box; padding-left: 3%; }
+    .appel, .suivant, #footer { align-items: flex-start; gap: 3%; }
+    .appel-boutons { flex-wrap: wrap; }
+    .footer-note { margin-left: 0; }
+    #top h1 { font-size: 36px; }
 }

@@ -1,0 +1,30 @@
+/* Second stylesheet loaded by javascript/script.js: dark, amber accent. */
+body { background-color: #1a1a1d; color: #e8e6e3; }
+
+/* text */
+body .menu a, body .menu .theme-toggle, body .intro-gauche small, body .decouvrir,
+body .intro-droite, body .texte1, body .texte3, body .fil, body .moteur, body .points,
+body .fiche, body .suivant, body .fiche h2, body .fiche td, body .points-liste h3,
+body .footer-note, body .description, body .titre1 a, body .theme-toggle, body .luxe p,
+body .etiquette, body .suivant h2, body .suivant .etiquette, body .fiche-intro p,
+body .haut a, body .formulaire label { color: #e8e6e3; }
+
+/* dark panels */
+body #voiture2, body .chiffres, body .appel, body .Moteur, body .barre-infos,
+body .barre-infos2, body .barre-infos3, body .video-m3 { background-color: #2b2b30; }
+
+/* amber accents */
+body .tag, body .bouton-fleche, body #footer, body .rond, body .carateristique span,
+body .description span, body .intro-droite .tag, body .formulaire button { background-color: #e0a458; color: #1a1a1d; }
+body .bouton-fleche:hover { background-color: #f0b96e; }
+body .menu .tag { color: #1a1a1d; }
+
+/* lines */
+body .barre, body .trait, body .points-liste article, body .fiche th, body .fiche td,
+body .fiche-liste div, body .chiffres div { border-color: #e0a458; }
+body .description::before { background-color: #e0a458; }
+
+/* forms and buttons */
+body .formulaire input, body .formulaire select { background-color: #2b2b30; color: #e8e6e3; border: 1px solid #e0a458; }
+body .bouton-clair, body .btn-plein { background-color: #e0a458; color: #1a1a1d; }
+body .bouton-contour, body .btn-contour { border-color: #e0a458; color: #e0a458; }
