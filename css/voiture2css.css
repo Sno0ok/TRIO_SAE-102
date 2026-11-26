@@ -1,4 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: "Inter";
+    src: url('../font/inter/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url('../font/inter/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url('../font/inter/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url('../font/inter/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
 body {
     margin: 0;
     background-color: #F0EBD8;
@@ -370,4 +393,54 @@ img {
     width: 60px;
     height: 60px;
     object-fit: contain;
+}
+.titre1 a,
+.theme-toggle,
+.description,
+.luxe p a,
+body > p a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.theme-toggle {
+    border: 0;
+    padding: 0;
+    background: none;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.infos2 p a {
+    color: white;
+}
+
+body.theme-dark {
+    background-color: #323031;
+    color: #C1BDB3;
+}
+
+body.theme-dark .description {
+    color: #C1BDB3;
+}
+
+body.theme-dark .description span {
+    background-color: #5F5B6B;
+}
+
+body.theme-dark .luxe p {
+    color: #7F7979;
+}
+
+.bouton-fleche {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #8a9bb3;
+    color: #0D1321;
+    font-size: 24px;
+    text-decoration: none;
 }
