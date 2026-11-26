@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIO – Réserver un essai</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js" defer></script>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+</head>
+<body>
+    <header id="top">
+        <div class="entete">
+            <p class="logo"><span class="logo-titre">TRIO</span><span class="logo-sous">LE GOÛT DE LA ROUTE</span></p>
+            <nav class="menu">
+                <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">Thème sombre</button>
+                <a href="index.html#voiture1">La collection</a>
+            </nav>
+        </div>
+        <hr class="barre">
+    </header>
+    <main>
+        <h1 class="form-titre">Réserver un essai</h1>
+        <form class="formulaire" action="#" method="post">
+            <label>Modèle
+                <select name="modele" required>
+                    <option value="">Choisir une voiture</option>
+                    <option>BMW M3 G80 Competition M</option>
+                    <option>Audi Q6 e-tron</option>
+                    <option>Voiture 3 de la collection</option>
+                </select>
+            </label>
+            <label>Nom complet
+                <input type="text" placeholder="Téo Alpaslan" name="nom" autocomplete="name" required>
+            </label>
+            <label>E-mail
+                <input type="email" name="email" placeholder="pierre-alexis.de-solminihac@univ-amu.fr" autocomplete="email" required>
+            </label>
+            <label>Téléphone
+                <input type="tel" placeholder="+330655841269" name="tel" autocomplete="tel" pattern="[0-9 +]{10,}" required>
+            </label>
+            <label>Date souhaitée
+                <input type="date" name="date" required>
+            </label>
+            <label>Créneau
+                <select name="creneau" required>
+                    <option>Matin (9h–12h)</option>
+                    <option>Après-midi (14h–18h)</option>
+                </select>
+            </label>
+            <label class="form-check">
+                <input type="checkbox" name="permis" required>
+                Je confirme être titulaire du permis de conduire B
+            </label>
+            <button type="submit" class="bouton-clair">Envoyer ma demande</button>
+        </form>
+    </main>
+</body>
+</html>

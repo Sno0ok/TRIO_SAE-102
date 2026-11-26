@@ -10,32 +10,20 @@ Le site est écrit en **HTML et CSS uniquement**, sans framework ni JavaScript.
 | Page | Contenu |
 |------|---------|
 | `index.html` | Accueil : présentation de la collection et des trois modèles |
-| `m3.html` | Fiche de la sportive (BMW M3 G80 Competition M) : vidéo, performances, moteur, points forts, fiche technique |
+| `voiture1.html` | Fiche de la sportive (BMW M3 G80 Competition M) : vidéo, performances, moteur, points forts, fiche technique |
 
 ## Arborescence
 
 ```
 .
 ├── index.html        Page d'accueil
-├── m3.html           Page de la BMW M3
+├── voiture1.html           Page de la BMW M3
 ├── css/
 │   └── style.css     Feuille de style commune aux pages
 ├── font/inter/       Police Inter (woff2) et sa licence (OFL.txt)
 ├── image/            Photos des voitures, du moteur et favicon
 └── video/            Vidéos publicitaires des modèles
 ```
-
-## Lancer le site
-
-Il suffit d'ouvrir `index.html` dans un navigateur.
-
-Si tu préfères passer par un serveur local, qui reproduit le fonctionnement d'un vrai hébergement :
-
-```
-python -m http.server 8123
-```
-
-puis ouvre <http://localhost:8123>.
 
 ## Choix techniques
 
@@ -54,6 +42,16 @@ puis ouvre <http://localhost:8123>.
 | Bleu ardoise | `#3E5C76` |
 | Bleu gris | `#8a9bb3` |
 
+### Palette sombre
+
+| Couleur | Code |
+|---------|------|
+| Graphite (fond) | `#323031` |
+| Graphite clair | `#3D3B3C` |
+| Gris | `#7F7979` |
+| Argent | `#C1BDB3` |
+| Charbon | `#5F5B6B` |
+
 ## Crédits
 
-- Police [Inter](https://rsms.me/inter/), sous licence SIL Open Font License (voir `font/inter/OFL.txt`).
+- Police [Inter](https://rsms.me/inter/)

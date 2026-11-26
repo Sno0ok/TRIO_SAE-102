@@ -101,10 +101,89 @@ body{
     text-decoration: none;
 }
 
+.menu .theme-toggle {
+    border: 0;
+    padding: 0;
+    background: none;
+    color: #0D1321;
+    font: inherit;
+    cursor: pointer;
+}
+
 .menu .tag {
     color: #F0EBD8;
     font-size: 14px;
     padding: 10px 22px;
+}
+
+body.theme-dark {
+    --theme-background: #323031;
+    --theme-surface: #3D3B3C;
+    --theme-muted: #7F7979;
+    --theme-text: #C1BDB3;
+    --theme-accent: #5F5B6B;
+    background-color: var(--theme-background);
+    color: var(--theme-text);
+}
+
+body.theme-dark .menu .theme-toggle,
+body.theme-dark .menu a:not(.tag),
+body.theme-dark .intro-gauche small,
+body.theme-dark .decouvrir {
+    color: var(--theme-text);
+}
+
+body.theme-dark .intro-droite,
+body.theme-dark .texte1,
+body.theme-dark .texte3 {
+    color: var(--theme-text);
+}
+
+body.theme-dark .trait,
+body.theme-dark .barre {
+    border-top-color: var(--theme-muted);
+}
+
+body.theme-dark #voiture2,
+body.theme-dark .chiffres,
+body.theme-dark .appel {
+    background-color: #5F5B6B;
+}
+
+body.theme-dark .fil,
+body.theme-dark .moteur,
+body.theme-dark .points,
+body.theme-dark .fiche,
+body.theme-dark .suivant {
+    color: var(--theme-text);
+}
+
+body.theme-dark .points-liste article {
+    border-top-color: var(--theme-muted);
+}
+
+body.theme-dark .points-liste h3,
+body.theme-dark .fiche h2,
+body.theme-dark .fiche td {
+    color: var(--theme-text);
+}
+
+body.theme-dark .tag,
+body.theme-dark .bouton-fleche {
+    background-color: #6c4d65;
+    color: var(--theme-text);
+}
+
+body.theme-dark .bouton-fleche:hover {
+    background-color: var(--theme-muted);
+}
+
+body.theme-dark #footer {
+    background-color: var(--theme-accent);
+}
+
+body.theme-dark .footer-note {
+    color: var(--theme-text);
 }
 
 .logo {
@@ -420,4 +499,42 @@ body{
     margin: 0;
     font-size: 10px;
     font-weight: 600;
+}
+
+.form-titre,
+.formulaire {
+    max-width: 480px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.formulaire label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.formulaire input,
+.formulaire select {
+    padding: 10px;
+    font: inherit;
+}
+
+.formulaire .form-check {
+    flex-direction: row;
+    align-items: center;
+}
+
+.formulaire button {
+    padding: 12px;
+    border: 1px solid #0D1321;
+    cursor: pointer;
+    font: inherit;
 }
